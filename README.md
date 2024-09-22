@@ -29,4 +29,5 @@ O projeto contém dois arquivos principais:
 Para executar os scripts, certifique-se de ter o Python instalado em sua máquina. Em seguida, execute os arquivos da seguinte maneira:
 
 python ValordeXnaFuncao.py
+
 python ProblemaDaMochila.py

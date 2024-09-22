@@ -17,13 +17,13 @@ def gerar_populacao(tamanho_populacao, tamanho_individuo):
 
 def selecao_torneio(populacao, fitness, tamanho_torneio=3):
     selecionados = random.sample(list(zip(populacao, fitness)), tamanho_torneio)
-    selecionados.sort(key=lambda x: x[1], reverse=True)  # Seleciona os melhores
+    selecionados.sort(key=lambda x: x[1], reverse=True)  
     return selecionados[0][0]
 
 def mutacao(individuo, taxa_mutacao):
     for i in range(len(individuo)):
         if random.random() < taxa_mutacao:
-            individuo[i] = 1 - individuo[i]  # Inverte o bit
+            individuo[i] = 1 - individuo[i] 
     return individuo
 
 def crossover(pai1, pai2):
